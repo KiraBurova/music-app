@@ -1,4 +1,4 @@
-# music-app
+# Music App
 
 An application using Deezer API to search for artists and see information about them.
 
