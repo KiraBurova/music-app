@@ -10,15 +10,13 @@ Tools:
 4. [Preact](https://preactjs.com/)
 5. [Testing Library](https://testing-library.com/docs/preact-testing-library/intro)
 6. [Cypress](https://www.cypress.io/)
-7. [Vite](https://vitejs.dev/)
 
+How to run the project:
 
-How to run locally:
+1. To run in dev mode:
+   `yarn dev`
+   `npm run dev`
 
-...
-
-
-
-
-
-
+2. To build
+   `yarn build`
+   `npm run build`
