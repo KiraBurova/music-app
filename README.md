@@ -13,10 +13,6 @@ Tools:
 
 How to run the project:
 
-1. To run in dev mode:
-   `yarn dev`
-   `npm run dev`
+1. To run in dev mode: `yarn dev` or `npm run dev`
 
-2. To build
-   `yarn build`
-   `npm run build`
+2. To build `yarn build` or `npm run build`
