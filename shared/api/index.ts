@@ -1,7 +1,4 @@
-import axios from 'axios';
+// hacky quick thing to get deezer api work without cors
+export const BASE_URI = 'https://proxy.cors.sh/http://api.deezer.com';
 
-const BASE_URI = 'https://api.deezer.com';
-
-export const getArtistsByQuery = (query: string) => {
-  return axios.get(`${BASE_URI}/search/artist?q=${query}`);
-};
+export { getArtistsByQuery } from './getArtistsByQuery';

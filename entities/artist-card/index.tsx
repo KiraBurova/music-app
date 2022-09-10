@@ -1,1 +1,1 @@
-export { ArtistCard } from './ui';
+export { default } from './ui/index';
