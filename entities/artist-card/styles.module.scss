@@ -1,0 +1,19 @@
+.cardImage {
+    display: block;
+    border-radius: 20%;
+}
+
+.cardText {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    bottom: 10%;
+    left: 5%;
+    font-size: 14px;
+}
+
+.cardName {
+    font-size: 20px;
+    margin-bottom: 5%;
+}
