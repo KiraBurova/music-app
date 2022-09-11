@@ -2,22 +2,22 @@ import React, { useEffect, useState } from 'react';
 
 import debounce from 'lodash/debounce';
 
-import { getArtistsByQuery } from '../../../shared/api/index';
 import Search from '../../../shared/ui/input/index';
+import { artistsModel } from '../../../entities/artist-card/model';
 
 const SearchArtists = () => {
   const [query, setQuery] = useState('');
 
   useEffect(() => {
     if (query) {
-      getArtistsByQuery(query);
+      artistsModel.effects.getArtistsListFx(query);
     }
   }, [query]);
 
   const handleSearch = debounce((e: React.ChangeEvent<HTMLInputElement>) => {
     const query = e.target.value;
     setQuery(query);
-  }, 1000);
+  }, 500);
 
   return (
     <div>

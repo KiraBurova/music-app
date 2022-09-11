@@ -1,5 +1,5 @@
 import formatNumber from '../../../shared/lib/formatNumber';
-import { Artist } from '../../../shared/models/index';
+import { Artist } from '../../../shared/model/index';
 import styles from './styles.module.scss';
 
 type ArtistCardProps = {
