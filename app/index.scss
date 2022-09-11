@@ -1,5 +1,9 @@
 @import './styles/vars.scss';
 
+html, body, #__next {
+    height: 100%;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }

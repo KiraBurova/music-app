@@ -1,3 +1,5 @@
+
+import 'normalize.css'
 import '../app/index.scss'
 
 export default function MyApp({ Component, pageProps }) {
