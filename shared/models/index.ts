@@ -1,5 +1,5 @@
 export type Artist = {
-  id: string;
+  id: number;
   name: string;
   link: string;
   picture: string;

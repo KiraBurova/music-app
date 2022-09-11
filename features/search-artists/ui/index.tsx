@@ -5,6 +5,8 @@ import debounce from 'lodash/debounce';
 import Search from '../../../shared/ui/input/index';
 import { artistsModel } from '../../../entities/artist-card/model';
 
+import styles from './styles.module.scss';
+
 const SearchArtists = () => {
   const [query, setQuery] = useState('');
 
@@ -20,7 +22,7 @@ const SearchArtists = () => {
   }, 500);
 
   return (
-    <div>
+    <div className={styles.searchInputHolder}>
       <Search
         large
         placeholder="Search for an artist..."

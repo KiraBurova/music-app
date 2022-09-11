@@ -1,1 +1,1 @@
-export { default } from './ui/search-artists';
+export { default } from './ui';
