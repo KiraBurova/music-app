@@ -12,14 +12,21 @@ const DisplayArtists = () => {
 
   return (
     <div className={styles.artists}>
-      {loading && <Loader />}
-      {artists.map((artist) => {
-        return (
-          <Link href={`artists/${artist.id}`}>
-            <ArtistCard key={artist.id} artist={artist} />
-          </Link>
-        );
-      })}
+      {loading ? (
+        <Loader />
+      ) : (
+        <>
+          {artists.map((artist) => {
+            return (
+              <Link href={`artists/${artist.id}`}>
+                <a>
+                  <ArtistCard key={artist.id} artist={artist} />
+                </a>
+              </Link>
+            );
+          })}
+        </>
+      )}
     </div>
   );
 };
