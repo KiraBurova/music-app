@@ -9,15 +9,27 @@ const getArtistsListFx = createEffect(async (params: string) => {
   return response.data.data;
 });
 
+const getArtistFx = createEffect(async (id: string) => {
+  const response: AxiosResponse<Artist> = await artists.getArtist(id);
+  return response.data;
+});
+
 const $artists = createStore<Artist[]>([]).on(
   getArtistsListFx.doneData,
   (_state, payload) => payload
 );
 
+const $artist = createStore<Artist>(null).on(
+  getArtistFx.doneData,
+  (_state, payload) => payload
+);
+
 export const effects = {
   getArtistsListFx,
+  getArtistFx,
 };
 
 export const store = {
   artists: $artists,
+  artist: $artist,
 };
