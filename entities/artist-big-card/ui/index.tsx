@@ -1,6 +1,6 @@
-import formatNumber from '../../../shared/lib/formatNumber';
-import { Artist } from '../../../shared/models';
-import BigCard from '../../../shared/ui/big-card';
+import formatNumber from '@shared/lib/formatNumber';
+import { Artist } from '@shared/models';
+import BigCard from '@shared/ui/big-card';
 import styles from './styles.module.scss';
 
 type ArtistBigCardProps = {

@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-
-import ArtistBigCard from '../../../entities/artist-big-card';
-import { effects, store } from '../../../entities/artist-card/model/artists';
 import { useStore } from 'effector-react';
-import Loader from '../../../shared/ui/loader';
+
+import ArtistBigCard from '@entities/artist-big-card';
+import { effects, store } from '@entities/artist-card/model/artists';
+import Loader from '@shared/ui/loader';
 
 const DetailedArtist = () => {
   const router = useRouter();

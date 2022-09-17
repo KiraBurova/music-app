@@ -1,4 +1,4 @@
-import DetailedArtist from '../../widget/detailed-artist/ui';
+import DetailedArtist from '@widget/detailed-artist';
 
 export default function Artist() {
   return <DetailedArtist />;

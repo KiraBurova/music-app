@@ -1,7 +1,7 @@
 import { AxiosResponse } from 'axios';
 import { createEffect, createStore } from 'effector-next';
-import { artists } from '../../../shared/api';
-import { Artist } from '../../../shared/models';
+import { artists } from '@shared/api';
+import { Artist } from '@shared/models';
 
 const getArtistsListFx = createEffect(async (params: string) => {
   const response: AxiosResponse<{ data: Artist[] }> =

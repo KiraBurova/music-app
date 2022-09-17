@@ -1,5 +1,5 @@
-import DisplayArtists from '../features/display-artists/index';
-import SearchArtists from '../features/search-artists/index';
+import DisplayArtists from '@features/display-artists/index';
+import SearchArtists from '@features/search-artists';
 
 import styles from './styles.module.scss';
 

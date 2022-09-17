@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 
 import debounce from 'lodash/debounce';
 
-import Search from '../../../shared/ui/input/index';
-import { artistsModel } from '../../../entities/artist-card/model';
+import Search from '@shared/ui/input/index';
+import { artistsModel } from '@entities/artist-card/model';
 
 import styles from './styles.module.scss';
 
