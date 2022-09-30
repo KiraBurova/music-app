@@ -5,6 +5,7 @@ import { useStore } from 'effector-react';
 import ArtistBigCard from '@entities/artist-big-card';
 import { effects, store } from '@entities/artist-card/model/artists';
 import Loader from '@shared/ui/loader';
+import DisplayTracklist from '@features/display-tracklist';
 
 const DetailedArtist = () => {
   const router = useRouter();
@@ -12,7 +13,9 @@ const DetailedArtist = () => {
 
   useEffect(() => {
     if (id) {
-      effects.getArtistFx(id as string);
+      effects.getArtistFx(id as string).then((atrist) => {
+        effects.getTracklistFx(atrist.tracklist);
+      });
     }
   }, [id]);
 
@@ -24,7 +27,14 @@ const DetailedArtist = () => {
       {loading ? (
         <Loader />
       ) : (
-        <>{artist && <ArtistBigCard artist={artist} />}</>
+        <>
+          {artist && (
+            <>
+              <ArtistBigCard artist={artist} />
+              <DisplayTracklist />
+            </>
+          )}
+        </>
       )}
     </div>
   );

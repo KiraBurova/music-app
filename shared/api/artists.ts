@@ -1,10 +1,14 @@
-import axios from 'axios';
+import fetchJsonp from 'fetch-jsonp';
 import { BASE_URI } from './index';
 
-export const getArtistsByQuery = (query: string) => {
-  return axios.get(`${BASE_URI}/search/artist?q=${query}`);
+export const getArtistsByQuery = async (query: string) => {
+  const response = await fetchJsonp(
+    `${BASE_URI}/search/artist?q=${query}&output=jsonp`
+  );
+  return await response.json();
 };
 
-export const getArtist = (id: string) => {
-  return axios.get(`${BASE_URI}/artist/${id}`);
+export const getArtist = async (id: string) => {
+  const response = await fetchJsonp(`${BASE_URI}/artist/${id}&output=jsonp`);
+  return await response.json();
 };

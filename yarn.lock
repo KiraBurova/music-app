@@ -792,6 +792,11 @@ fd-slicer@~1.1.0:
   dependencies:
     pend "~1.2.0"
 
+fetch-jsonp@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/fetch-jsonp/-/fetch-jsonp-1.2.3.tgz#ae99a867095cb1ce5c39fac601d70d1084db122f"
+  integrity sha512-C13k1o7R9JTN1wmhKkrW5bU/00LwixXnkufQUR6Rbf4KCS0i8mycQaovt4WVbHnA2NKgi7Ryp9Whpy/CGcij6Q==
+
 figures@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/figures/-/figures-3.2.0.tgz#625c18bd293c604dc4a8ddb2febf0c88341746af"
