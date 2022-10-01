@@ -7,6 +7,8 @@ import { effects, store } from '@entities/artist-card/model/artists';
 import Loader from '@shared/ui/loader';
 import DisplayTracklist from '@features/display-tracklist';
 
+import styles from './styles.module.scss';
+
 const DetailedArtist = () => {
   const router = useRouter();
   const { id } = router.query;
@@ -20,18 +22,23 @@ const DetailedArtist = () => {
   }, [id]);
 
   const artist = useStore(store.artist);
-  const loading = useStore(effects.getArtistFx.pending);
+  const tracklist = useStore(store.tracklist);
+  const loadingArtist = useStore(effects.getArtistFx.pending);
+  const loadingTracklist = useStore(effects.getTracklistFx.pending);
 
   return (
-    <div>
-      {loading ? (
+    <div className={styles.detailedArtist}>
+      {loadingArtist ? (
         <Loader />
       ) : (
         <>
           {artist && (
             <>
               <ArtistBigCard artist={artist} />
-              <DisplayTracklist />
+              <DisplayTracklist
+                tracklist={tracklist}
+                loadingTracklist={loadingTracklist}
+              />
             </>
           )}
         </>

@@ -1,4 +1,4 @@
-import formatNumber from '@shared/lib/formatNumber';
+import { formatNumber } from '@shared/lib';
 import { Artist } from '@shared/models';
 import Card from '@shared/ui/card';
 import styles from './styles.module.scss';

@@ -1,4 +1,4 @@
-import formatNumber from '@shared/lib/formatNumber';
+import { formatNumber } from '@shared/lib/';
 import { Artist } from '@shared/models';
 import BigCard from '@shared/ui/big-card';
 import styles from './styles.module.scss';
@@ -11,11 +11,13 @@ const ArtistBigCard = ({ artist }: ArtistBigCardProps) => {
   const { name, picture_big, nb_album, nb_fan } = artist;
   return (
     <BigCard>
-      <img src={picture_big} className={styles.cardImage} />
-      <div className={styles.cardText}>
-        <span className={styles.cardName}>{name}</span>
-        <span>{formatNumber(nb_fan)} fans</span>
-        <span>{formatNumber(nb_album)} albums</span>
+      <div className={styles.artistBigCard}>
+        <img src={picture_big} className={styles.cardImage} />
+        <div className={styles.cardText}>
+          <span className={styles.cardName}>{name}</span>
+          <span>{formatNumber(nb_fan)} fans</span>
+          <span>{formatNumber(nb_album)} albums</span>
+        </div>
       </div>
     </BigCard>
   );

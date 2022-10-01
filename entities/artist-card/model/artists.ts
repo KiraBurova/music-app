@@ -1,6 +1,6 @@
 import { createEffect, createStore } from 'effector-next';
 import { artists, tracklist } from '@shared/api';
-import { Artist, Tracklist } from '@shared/models';
+import { Artist, Track } from '@shared/models';
 
 const getArtistsListFx = createEffect(async (params: string) => {
   const response: { data: Artist[] } = await artists.getArtistsByQuery(params);
@@ -13,8 +13,8 @@ const getArtistFx = createEffect(async (id: string) => {
 });
 
 const getTracklistFx = createEffect(async (url: string) => {
-  const response: Tracklist = await tracklist.getTracklist(url);
-  return response;
+  const response: { data: Track[] } = await tracklist.getTracklist(url);
+  return response.data;
 });
 
 const $artists = createStore<Artist[]>([]).on(
@@ -27,7 +27,7 @@ const $artist = createStore<Artist>(null).on(
   (_state, payload) => payload
 );
 
-const $tracklist = createStore<Tracklist>(null).on(
+const $tracklist = createStore<Track[]>(null).on(
   getTracklistFx.doneData,
   (_state, payload) => payload
 );

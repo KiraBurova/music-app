@@ -14,7 +14,7 @@ export type Artist = {
   type: string;
 };
 
-export type Tracklist = {
+export type Track = {
   album: {
     cover: string;
     cover_big: string;

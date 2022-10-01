@@ -23,7 +23,8 @@
       "@features/*": ["features/*"],
       "@entities/*": ["entities/*"],
       "@widget/*": ["widget/*"],
-      "@shared/*": ["shared/*"]
+      "@shared/*": ["shared/*"],
+      "@app/*": ["app/*"],
     }
   },
   "include": [

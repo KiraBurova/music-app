@@ -1,5 +1,6 @@
 import 'normalize.css';
-import '../app/index.scss';
+import '../app/index.css';
+import '../app/styles/vars.css';
 
 const MyApp = ({ Component, pageProps }) => {
   return <Component {...pageProps} />;
