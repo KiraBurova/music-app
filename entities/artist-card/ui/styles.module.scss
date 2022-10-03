@@ -11,9 +11,11 @@
     left: 5%;
     font-size: 14px;
     background: var(--main-dark);
+    color: var(--main-light);
     width: 80%;
     padding: 10px;
     box-sizing: border-box;
+    border-radius: 10px;
 }
 
 .cardName {

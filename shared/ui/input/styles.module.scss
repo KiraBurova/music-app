@@ -1,5 +1,13 @@
 .searchInput {
     padding: 5px;
+    color: var(--main-light-dark);
+    border: 1px solid var(--main-light-dark);
+    font-size: 14px;
+
+    &::placeholder {
+        color: var(--main-light-dark);
+        opacity: 1;
+      }
 }
 
 .large {
