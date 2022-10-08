@@ -3,13 +3,44 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "jest --coverage --watchAll"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "<rootDir>/**/*.tsx",
+      "!<rootDir>/pages/*.tsx",
+      "!<rootDir>/pages/**/*.tsx"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    },
+    "coverageReporters": [
+      "html",
+      "text"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+    },
+    "testEnvironment": "jsdom"
   },
   "devDependencies": {
-    "@testing-library/preact": "^3.2.2",
+    "@babel/core": "^7.19.3",
+    "@testing-library/react": "^13.4.0",
+    "@types/jest": "^29.1.2",
     "@types/lodash": "^4.14.185",
     "@types/node": "^18.7.14",
     "@types/react": "^18.0.18",
+    "babel-jest": "^29.1.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.1.2",
+    "jest-environment-jsdom": "^29.1.2",
+    "ts-jest": "^29.0.3",
     "typescript": "^4.8.2"
   },
   "dependencies": {
@@ -21,13 +52,9 @@
     "fetch-jsonp": "^1.2.3",
     "lodash": "^4.17.21",
     "next": "^12.0.0",
-    "next-plugin-preact": "^3.0.6",
     "normalize.css": "^8.0.1",
-    "preact": "^10.10.6",
-    "preact-render-to-string": "^5.1.19",
-    "react": "npm:@preact/compat@0.0.4",
-    "react-dom": "npm:@preact/compat@0.0.4",
-    "react-ssr-prepass": "npm:preact-ssr-prepass@^1.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "sass": "^1.54.9"
   }
 }
