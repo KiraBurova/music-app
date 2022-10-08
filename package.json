@@ -25,7 +25,11 @@
       "text"
     ],
     "moduleNameMapper": {
-      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy",
+      "^@entities(.*)$": "<rootDir>/entities$1",
+      "^@features(.*)$": "<rootDir>/features$1",
+      "^@shared(.*)$": "<rootDir>/shared$1",
+      "^@app(.*)$": "<rootDir>/app$1"
     },
     "testEnvironment": "jsdom"
   },

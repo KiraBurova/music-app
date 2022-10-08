@@ -23,7 +23,12 @@ const TracklistCard = ({ track }: TracklistCardProps) => {
         {track.title} ({track.album.title})
         {track.explicit_lyrics && <span className={styles.explicit}>E</span>}
         <div>{secondsToMinutes(track.duration)}</div>
-        <audio controls ref={audioRef} className={styles.audioPlayer}>
+        <audio
+          data-testid="audio-player"
+          controls
+          ref={audioRef}
+          className={styles.audioPlayer}
+        >
           <source src={track.preview} type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>

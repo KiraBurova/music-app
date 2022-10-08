@@ -18,7 +18,7 @@ const DisplayArtists = () => {
         <>
           {artists.map((artist) => {
             return (
-              <Link href={`artists/${artist.id}`}>
+              <Link href={`artists/${artist.id}`} key={artist.id}>
                 <a>
                   <ArtistCard key={artist.id} artist={artist} />
                 </a>

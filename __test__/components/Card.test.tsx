@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import Card from '../../shared/ui/card';
+import Card from '@shared/ui/card';
 
 describe('<Card/>', () => {
   it('Render card with content', () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import BigCard from '../../shared/ui/big-card';
+import BigCard from '@shared/ui/big-card';
 
 describe('<BigCard/>', () => {
   it('Render card with content', () => {
