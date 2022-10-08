@@ -10,7 +10,9 @@
     "collectCoverageFrom": [
       "<rootDir>/**/*.tsx",
       "!<rootDir>/pages/*.tsx",
-      "!<rootDir>/pages/**/*.tsx"
+      "!<rootDir>/pages/**/*.tsx",
+      "!<rootDir>/features/**/*.tsx",
+      "!<rootDir>/widget/**/*.tsx"
     ],
     "coverageThreshold": {
       "global": {
@@ -36,6 +38,7 @@
   "devDependencies": {
     "@babel/core": "^7.19.3",
     "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
     "@types/jest": "^29.1.2",
     "@types/lodash": "^4.14.185",
     "@types/node": "^18.7.14",
