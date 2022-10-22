@@ -29,7 +29,7 @@ const DetailedArtist = () => {
   return (
     <div className={styles.detailedArtist} data-testid="detailed-artist">
       {loadingArtist ? (
-        <Loader />
+        <Loader className={styles.loader} />
       ) : (
         <>
           {artist && (

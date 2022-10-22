@@ -1,10 +1,16 @@
+import classNames from 'classnames';
+
 import styles from './styles.module.scss';
 
-const Loader = () => {
+interface LoaderProps {
+  className?: string;
+}
+
+const Loader = ({ className }: LoaderProps) => {
   return (
     <svg
       data-testid="loader"
-      className={styles.spinner}
+      className={classNames(styles.spinner, className)}
       width="65px"
       height="65px"
       viewBox="0 0 66 66"
