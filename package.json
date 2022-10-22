@@ -8,6 +8,7 @@
     "test:watchAll": "jest --coverage --watchAll",
     "cypress:open": "cypress open"
   },
+  "homepage": "https://KiraBurova.github.io/music-app",
   "jest": {
     "collectCoverageFrom": [
       "<rootDir>/**/*.tsx",
