@@ -27,7 +27,7 @@ const DetailedArtist = () => {
   const loadingTracklist = useStore(effects.getTracklistFx.pending);
 
   return (
-    <div className={styles.detailedArtist}>
+    <div className={styles.detailedArtist} data-testid="detailed-artist">
       {loadingArtist ? (
         <Loader />
       ) : (

@@ -27,6 +27,7 @@ const SearchArtists = () => {
         large
         placeholder="Search for an artist..."
         onChange={handleSearch}
+        dataTestId="search-artists-input"
       />
     </div>
   );

@@ -7,14 +7,16 @@ type SearchProps = {
   placeholder?: string;
   large?: boolean;
   onChange?: (e: React.ChangeEvent) => void;
+  dataTestId?: string;
 };
 
-const Search = ({ large, placeholder, onChange }: SearchProps) => {
+const Search = ({ large, placeholder, onChange, dataTestId }: SearchProps) => {
   return (
     <input
       placeholder={placeholder}
       className={classNames(styles.searchInput, { [styles.large]: large })}
       onChange={onChange}
+      data-testid={dataTestId}
     />
   );
 };

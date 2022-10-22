@@ -11,7 +11,7 @@ const DisplayArtists = () => {
   const loading = useStore(effects.getArtistsListFx.pending);
 
   return (
-    <div className={styles.artists}>
+    <div className={styles.artists} data-testid="artists">
       {loading ? (
         <Loader />
       ) : (
