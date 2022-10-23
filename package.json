@@ -7,7 +7,8 @@
     "export": "next export",
     "test": "jest",
     "test:watchAll": "jest --coverage --watchAll",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "homepage": "https://KiraBurova.github.io/music-app",
   "jest": {
