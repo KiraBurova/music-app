@@ -34,8 +34,15 @@ jobs:
       - name: Create NoJekyll File
         run: touch ./out/.nojekyll
 
-      - name: Run tests
+      - name: Run unit tests
         run: yarn run test
+
+      - name: Run e2e tests
+        uses: cypress-io/github-action@v4
+        with:
+          # Specify Browser since container image is compile with Firefox
+          browser: firefox
+          build: yarn build
 
       - name: Upload production-ready build files
         uses: JamesIves/github-pages-deploy-action@v4
