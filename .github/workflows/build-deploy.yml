@@ -40,13 +40,6 @@ jobs:
       - name: Run e2e tests
         run: yarn run cypress:run
 
-  deploy:
-    name: Deploy
-    needs: build
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-
-    steps:
       - name: Upload production-ready build files
         uses: JamesIves/github-pages-deploy-action@v4
         with:
