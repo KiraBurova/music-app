@@ -16,3 +16,5 @@ How to run the project:
 1. To run in dev mode: `yarn dev` or `npm run dev`
 
 2. To build `yarn build` or `npm run build`
+
+Deplyed at: https://github.com/KiraBurova/music-app
