@@ -1,7 +1,7 @@
 import { defineConfig } from 'cypress';
 let baseUrl = process.env.CI
-  ? 'http://staging.example.com'
-  : 'https://kiraburova.github.io/music-app/';
+  ? 'https://kiraburova.github.io/music-app/'
+  : 'http://localhost:3000';
 
 export default defineConfig({
   e2e: {
