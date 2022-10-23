@@ -37,9 +37,14 @@ jobs:
       - name: Run unit tests
         run: yarn run test
 
-      - name: Cypress run
+      - name: Run e2e tests
         run: yarn run cypress:run
 
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
       - name: Upload production-ready build files
         uses: JamesIves/github-pages-deploy-action@v4
         with:
