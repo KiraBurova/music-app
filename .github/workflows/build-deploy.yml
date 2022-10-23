@@ -31,6 +31,9 @@ jobs:
       - name: Export project
         run: yarn run export
 
+      - name: Create NoJekyll File
+        run: touch ./out/.nojekyll
+
       - name: Run tests
         run: yarn run test
 
