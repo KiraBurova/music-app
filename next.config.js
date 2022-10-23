@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-    // basePath: '/nextjs-pages',
-    // assetPrefix: '/nextjs-pages',
+    basePath: '/music-app',
+    assetPrefix: '/music-app',
 }
 
 module.exports = nextConfig
