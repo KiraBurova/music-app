@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    name: Build
+    name: Build and Deploy
     runs-on: ubuntu-latest
 
     steps:
@@ -33,12 +33,6 @@ jobs:
 
       - name: Run tests
         run: yarn run test
-
-  deploy:
-    name: Deploy
-    needs: build
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
 
       - name: Upload production-ready build files
         uses: JamesIves/github-pages-deploy-action@v4
