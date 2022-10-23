@@ -1,4 +1,4 @@
-import { ARTISTS, LOADER, SEARCH_ARTISTS_INPUT } from './constants';
+import { ARTISTS, LOADER, SEARCH_ARTISTS_INPUT } from '../support/constants';
 
 describe('Search Artists Feature', () => {
   describe('Search Artists', () => {

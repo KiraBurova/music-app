@@ -3,7 +3,7 @@ import {
   DETAILED_ARTIST,
   LOADER,
   SEARCH_ARTISTS_INPUT,
-} from './constants';
+} from '../support/constants';
 
 describe('Display Artists Feature', () => {
   it('Opens another page on click on a card', () => {

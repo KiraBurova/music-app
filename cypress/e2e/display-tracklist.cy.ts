@@ -4,7 +4,7 @@ import {
   LOADER,
   SEARCH_ARTISTS_INPUT,
   AUDIO_PLAYER,
-} from './constants';
+} from '../support/constants';
 
 describe('Disaply Tracklist', () => {
   it('Showing tracklist', () => {
