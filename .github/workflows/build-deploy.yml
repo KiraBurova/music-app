@@ -40,7 +40,7 @@ jobs:
       - name: Run cypress e2e tests
         uses: cypress-io/github-action@v2
         with:
-          start: yarn run cypress:run
+          start: yarn run cypress:open
           browser: firefox
           headless: true
           wait-on: 'https://kiraburova.github.io/music-app/'
