@@ -37,12 +37,13 @@ jobs:
       - name: Run unit tests
         run: yarn run test
 
-      - name: Run e2e tests
-        uses: cypress-io/github-action@v4
+      - name: Run cypress e2e tests
+        uses: cypress-io/github-action@v2
         with:
-          # Specify Browser since container image is compile with Firefox
-          browser: firefox
-          build: yarn build
+          start: npm run e2e
+          browser: chrome
+          headless: true
+          wait-on: 'https://kiraburova.github.io/music-app/'
 
       - name: Upload production-ready build files
         uses: JamesIves/github-pages-deploy-action@v4
