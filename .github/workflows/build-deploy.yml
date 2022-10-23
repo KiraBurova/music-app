@@ -39,8 +39,6 @@ jobs:
 
       - name: Cypress run
         run: yarn run cypress:run
-        with:
-          config-file: cypress.config.ts
 
       - name: Upload production-ready build files
         uses: JamesIves/github-pages-deploy-action@v4
