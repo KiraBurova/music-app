@@ -17,4 +17,4 @@ How to run the project:
 
 2. To build `yarn build` or `npm run build`
 
-Deplyed at: https://github.com/KiraBurova/music-app
+Deplyed at: https://kiraburova.github.io/music-app/
