@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
 
+const url = process.env.NODE_ENV === 'development'
+  ? undefined
+  : '/music-app';
+
 const nextConfig = {
-    basePath: '/music-app',
-    assetPrefix: '/music-app',
+    basePath: url,
+    assetPrefix: url,
 }
 
 module.exports = nextConfig
