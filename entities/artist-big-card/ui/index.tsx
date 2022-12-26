@@ -9,6 +9,7 @@ type ArtistBigCardProps = {
 
 const ArtistBigCard = ({ artist }: ArtistBigCardProps) => {
   const { name, picture_big, nb_album, nb_fan } = artist;
+
   return (
     <BigCard>
       <div className={styles.artistBigCard}>
