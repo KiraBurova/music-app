@@ -14,7 +14,11 @@ Tools:
 How to run the project:
 
 1. To run in dev mode: `yarn dev` or `npm run dev`
-
 2. To build `yarn build` or `npm run build`
 
-Deplyed at: https://github.com/KiraBurova/music-app
+How to run tests:
+
+1. `yarn test` for Unit tests
+2. `yarn cypress open` for e2e tests
+
+Deplyed at: https://kiraburova.github.io/music-app/
