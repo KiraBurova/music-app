@@ -1,6 +1,6 @@
 # Music App
 
-An application using Deezer API to search for artists and see information about them.
+An application using Deezer API to search artists and to display their tracks.
 
 Tools:
 
@@ -19,6 +19,6 @@ How to run the project:
 How to run tests:
 
 1. `yarn test` for Unit tests
-2. `yarn cypress open` for e2e tests
+2. `yarn cypress open` to open e2e tests
 
 Deplyed at: https://kiraburova.github.io/music-app/
